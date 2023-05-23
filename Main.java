@@ -1,4 +1,3 @@
-
 import java.util.*;
 class Concesionaria {
     String nombre;
@@ -12,26 +11,16 @@ class Concesionaria {
 
 
 
-        System.out.println(" Bienvenido a Concesionaria UCES");
 
-
-        Scanner sc = new Scanner(System.in);
-
-        System.out.println(" Desea ver nuestra lista de autos actual? presione 2 para SI y 1 para NO");
-        int Numero1 = 1;
-        int Numero2 = 2;
-        Numero1 = sc.nextInt();
-
-        if(Numero1  >= 2){
             System.out.println(" El nombre del auto es "+ nombre);
             System.out.println(" La marca del auto es "+ marca);
             System.out.println(" El modelo del auto es "+ modelo);
             System.out.println(" El id del auto es "+ id);
             System.out.println(" El stock del auto es "+ stock);
 
-        }else{
 
-            System.out.println(" Gracias por visitarnos :)");
+
+
         }
 
 
@@ -39,12 +28,23 @@ class Concesionaria {
 
 
 
-}
+
 
 class Main {
     public static void main(String[] args) {
 
 
+        System.out.println(" Bienvenido a Concesionaria UCES");
+
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println(" Desea ver nuestra lista de autos actual? presione SI o NO");
+     String Respuesta1 = "SI";
+    String Respuesta2 = "NO";
+        Respuesta1 = sc.nextLine();
+
+        if(Respuesta1.equals("SI")){
 
 
         Concesionaria Auto1 = new Concesionaria ();
@@ -54,6 +54,7 @@ class Main {
         Auto1.id = 1;
         Auto1.stock = 12;
         Auto1.mostrar();
+
 
         Concesionaria Auto2 = new Concesionaria ();
         Auto2.nombre = "Cruze";
@@ -86,5 +87,10 @@ class Main {
         Auto5.id = 5;
         Auto5.stock = 15;
         Auto5.mostrar();
+
+        }else{
+
+        System.out.println(" Gracias por visitarnos :)");
     }
+}
 }
