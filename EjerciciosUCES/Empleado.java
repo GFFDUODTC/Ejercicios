@@ -38,21 +38,33 @@ public class Empleado {
         Empleado.add(nom2);
         Empleado.add(nom3);
 
-        salario_aumento = sal1*0.1;
+  salario_aumento = sal1*10.0;
+        salario_aumento2 = sal1*10.0;
+        salario_aumento3 = sal1*10.0;
 
         if(anti1>5) {
 
             JOptionPane.showMessageDialog(null, "Su nombre es: " + nom1 + " Y su sueldo es: " + salario_aumento);
-            JOptionPane.showMessageDialog(null, "Su nombre es: " + nom2 + " Y su sueldo es: " + salario_aumento);
-            JOptionPane.showMessageDialog(null, "Su nombre es: " + nom3 + " Y su sueldo es: " + salario_aumento);
+
 
 
         }else {
 
             JOptionPane.showMessageDialog(null, "Su nombre es: " + nom1 + " Y su sueldo es: " + sal1);
-            JOptionPane.showMessageDialog(null, "Su nombre es: " + nom2 + " Y su sueldo es: " + sal2);
-            JOptionPane.showMessageDialog(null, "Su nombre es: " + nom3 + " Y su sueldo es: " + sal3);
         }
 
+        if(anti2>5) {
+            JOptionPane.showMessageDialog(null, "Su nombre es: " + nom2 + " Y su sueldo es: " + salario_aumento2);
+
+        } else{
+            JOptionPane.showMessageDialog(null, "Su nombre es: " + nom2 + " Y su sueldo es: " + sal2);
+        }
+
+        if(anti3>5) {
+            JOptionPane.showMessageDialog(null, "Su nombre es: " + nom3 + " Y su sueldo es: " + salario_aumento3);
+
+        }else{
+            JOptionPane.showMessageDialog(null, "Su nombre es: " + nom3 + " Y su sueldo es: " + sal3);
+        }
     }
 }
