@@ -29,7 +29,7 @@ public class Ejercicio5 {
         int numero = sc.nextInt();
         if(numAleatorio==numero){
             System.out.println("acerto " + numero);
-
+            break;
         } else {
             System.out.println("No acerto "+ numero);
         }
