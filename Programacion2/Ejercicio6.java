@@ -1,3 +1,6 @@
+/* 1-	Realizar un programa en java, que pida dos números por pantalla, luego imprimir si el primer número solicitado es mayor al segundo  */
+
+
 
 import javax.swing.*;
 
